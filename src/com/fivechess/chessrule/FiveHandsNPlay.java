@@ -4,9 +4,7 @@ import com.fivechess.chessboard.ChessState;
 import com.fivechess.chessboard.FiveChessBoard;
 import com.fivechess.chessboard.Role;
 import com.fivechess.evaluate.AiEvaluate;
-import com.fivechess.evaluate.Dir;
 import com.fivechess.evaluate.Point;
-
 import javax.swing.JButton;
 
 

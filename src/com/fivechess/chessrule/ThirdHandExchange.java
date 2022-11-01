@@ -23,38 +23,38 @@ public class ThirdHandExchange {
     // after 3rd hand by Black side
     // before 4th hand by White side
     public void start(FiveChessBoard fiveChessBoard) {
-        chessBoard = fiveChessBoard;
+        this.chessBoard = fiveChessBoard;
 
-        chessBoard.removeMouseListener(chessBoard);
+        this.chessBoard.removeMouseListener(chessBoard);
 
-        chessBoard.add(exchangeBtn);
-        chessBoard.add(whiteBtn);
-        chessBoard.add(blackBtn);
-        exchangeBtn.addActionListener(chessBoard);
-        whiteBtn.addActionListener(chessBoard);
-        blackBtn.addActionListener(chessBoard);
+        this.chessBoard.add(exchangeBtn);
+        this.chessBoard.add(whiteBtn);
+        this.chessBoard.add(blackBtn);
+        this.exchangeBtn.addActionListener(chessBoard);
+        this.whiteBtn.addActionListener(chessBoard);
+        this.blackBtn.addActionListener(chessBoard);
 
-        exchangeBtn.setVisible(true);
-        whiteBtn.setVisible(false);
-        blackBtn.setVisible(false);
+        this.exchangeBtn.setVisible(true);
+        this.whiteBtn.setVisible(false);
+        this.blackBtn.setVisible(false);
     }
 
     public void run() {
         if(FiveChessBoard.role == Role.COMPUTER) {
-            if(select == ChessState.WHITE) this.computer();
+            if(this.select == ChessState.WHITE) this.computer();
             else {
                 FiveChessBoard.role = Role.PLAYER;
 
                 FiveChessBoard.toJudge.clear();
-                chessBoard.handleToJudge(p1);
-                chessBoard.handleToJudge(p3);
+                this.chessBoard.handleToJudge(p1);
+                this.chessBoard.handleToJudge(p3);
             }
         } else {
-            if(select == ChessState.BLACK) {
+            if(this.select == ChessState.BLACK) {
                 FiveChessBoard.role = Role.COMPUTER;
 
                 FiveChessBoard.toJudge.clear();
-                chessBoard.handleToJudge(p2);
+                this.chessBoard.handleToJudge(p2);
 
                 this.computer();
             }
@@ -62,22 +62,23 @@ public class ThirdHandExchange {
     }
 
     public void end() {
-        chessBoard.addMouseListener(chessBoard);
+        this.chessBoard.addMouseListener(chessBoard);
 
-        exchangeBtn.removeActionListener(chessBoard);
-        whiteBtn.removeActionListener(chessBoard);
-        blackBtn.removeActionListener(chessBoard);
+        this.exchangeBtn.removeActionListener(chessBoard);
+        this.whiteBtn.removeActionListener(chessBoard);
+        this.blackBtn.removeActionListener(chessBoard);
 
-        chessBoard.remove(exchangeBtn);
-        chessBoard.remove(whiteBtn);
-        chessBoard.remove(blackBtn);
+        this.chessBoard.remove(exchangeBtn);
+        this.chessBoard.remove(whiteBtn);
+        this.chessBoard.remove(blackBtn);
     }
 
     private void computer() {
         Point computerPoint = AiEvaluate.computerGo();
-        chessBoard.setColorAndRepaint(computerPoint);
-        chessBoard.handleToJudge(computerPoint);
-        chessBoard.stateTrans();
+
+        this.chessBoard.setColorAndRepaint(computerPoint);
+        this.chessBoard.handleToJudge(computerPoint);
+        this.chessBoard.stateTrans();
     }
 
 }

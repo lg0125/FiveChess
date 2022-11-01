@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e882e5b9-f790-4441-bba3-dccb3209e60b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FiveChessGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/FiveChessApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/FiveChessBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveChessRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveHandsNPlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/ForbiddenHandRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/ThirdHandExchange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/AiEvaluate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Dir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fivechess/test/ToJudgeTest.java" afterDir="false" />
+    <list default="true" id="e882e5b9-f790-4441-bba3-dccb3209e60b" name="变更" comment="已完成三手可交换、五手两打">
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/ChessApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessBoardActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessConnType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessConnectionJudge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessConnectionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/ChessStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/ChessDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Evaluate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/evaluate/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/judge/ChessGameJudge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/rule/ChessRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/rule/FifthHandNPlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/rule/ForBiddenHandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/rule/ForbiddenHand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fivechess/rule/ThirdHandExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fivechess/chessboard/FiveChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fivechess/chessboard/FiveChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveChessRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveChessRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveHandsNPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/FiveHandsNPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fivechess/chessrule/ForbiddenHandRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/ForbiddenHand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fivechess/chessrule/ThirdHandExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fivechess/chessrule/ThirdHandExchange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -63,12 +67,26 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/graduate/oriented_object&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.com.fivechess.FiveChessApplication">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fivechess.chessboard.Test" />
+  <component name="RunManager" selected="应用程序.ChessApplication">
+    <configuration name="ChessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fivechess.ChessApplication" />
+      <module name="FiveChessGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fivechess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiveChessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fivechess.chessboard.FiveChessApplication" />
       <module name="FiveChessGame" />
       <extension name="coverage">
         <pattern>
@@ -93,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.fivechess.FiveChessApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="com.fivechess.FiveChessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fivechess.FiveChessApplication" />
       <module name="FiveChessGame" />
       <option name="PROGRAM_PARAMETERS" value="-Xms1024m -Xmx2048m -Xmn512m -XX:MetaspaceSize=256m" />
@@ -107,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.fivechess.chessboard.FiveChessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fivechess.chessboard.FiveChessApplication" />
+    <configuration name="com.fivechess.chessboard.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fivechess.chessboard.Test" />
       <module name="FiveChessGame" />
       <extension name="coverage">
         <pattern>
@@ -121,16 +139,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.ChessApplication" />
+      <item itemvalue="应用程序.FiveChessApplication" />
+      <item itemvalue="应用程序.com.fivechess.chessboard.Test" />
       <item itemvalue="应用程序.com.fivechess.FiveChessApplication" />
-      <item itemvalue="应用程序.com.fivechess.chessboard.FiveChessApplication" />
-      <item itemvalue="应用程序.Test" />
       <item itemvalue="应用程序.ToJudgeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ChessApplication" />
+        <item itemvalue="应用程序.com.fivechess.FiveChessApplication" />
         <item itemvalue="应用程序.ToJudgeTest" />
-        <item itemvalue="应用程序.Test" />
-        <item itemvalue="应用程序.com.fivechess.chessboard.FiveChessApplication" />
+        <item itemvalue="应用程序.com.fivechess.chessboard.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +163,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665643418745</updated>
     </task>
+    <task id="LOCAL-00001" summary="已完成三手可交换、五手两打">
+      <created>1666537381438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666537381438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +183,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="已完成三手可交换、五手两打" />
+    <option name="LAST_COMMIT_MESSAGE" value="已完成三手可交换、五手两打" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

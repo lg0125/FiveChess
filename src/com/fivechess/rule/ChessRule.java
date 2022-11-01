@@ -1,7 +1,7 @@
-package com.fivechess.chessrule;
+package com.fivechess.rule;
 
-public class FiveChessRule {
+public class ChessRule {
     public static final ThirdHandExchange THIRD_HAND_EXCHANGE = new ThirdHandExchange();
-    public static final FiveHandsNPlay FIVE_HANDS_N_PLAY = new FiveHandsNPlay();
+    public static final FifthHandNPlay FIFTH_HAND_N_PLAY = new FifthHandNPlay();
     public static final ForbiddenHand FORBIDDEN_HAND = new ForbiddenHand();
 }

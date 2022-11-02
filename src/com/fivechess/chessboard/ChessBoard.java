@@ -137,20 +137,6 @@ public class ChessBoard extends JPanel
         if(e.getSource() == startBtn ) {
             startBtn.setVisible(false);
 
-            // Reset
-            this.step = 0;
-            this.playerFifthHandNPlay = 1;
-            this.color = ChessState.BLACK;
-            this.toJudge.clear();
-            this.chessmanArray = new ChessState[Rows][Rows];
-            for(int row = 0; row < Rows; row++){
-                for(int col = 0; col < Rows; col++){
-                    this.chessmanArray[row][col] = ChessState.NOTHING;
-                }
-            }
-            // Reset
-            ChessRule.FIFTH_HAND_N_PLAY.reset();
-
             this.option = JOptionPane.showConfirmDialog(null,
                     "只想赢一局 是否先手", "五子棋", JOptionPane.YES_NO_OPTION);
 
@@ -260,7 +246,12 @@ public class ChessBoard extends JPanel
             } else if (this.step == Rows * Rows) {
                 this.resultAndReset("平局");
             } else {
-                Position computerPos = this.evaluate.computerGo();
+
+                Position computerPos;
+                do {
+                    computerPos = this.evaluate.computerGo();
+                } while (this.evaluate.chessGameJudge
+                            .isForbiddenHand(ChessRule.FORBIDDEN_HAND.run(pos)));
 
                 this.setColorAndRepaint(computerPos);
                 this.handleToJudge(computerPos);
@@ -311,7 +302,6 @@ public class ChessBoard extends JPanel
     public void resultAndReset(String text) {
         JOptionPane.showConfirmDialog(null, text, "五子棋", JOptionPane.DEFAULT_OPTION);
         againBtn.setVisible(true);
-        this.step = 0;
     }
 
     @Override
